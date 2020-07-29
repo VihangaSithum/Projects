@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Audio Form</title>
+	<link rel="stylesheet" type="text/css" href="AudioFormCss.css">
+</head>
+</head>
+<body>
+	<div class="form1">
+		<h1>Audio Form</h1>
+    	<form method="post" action="dbConnection.php">
+            <p>Catalog Id:</p>
+            <input type="text" name="catalogId"  required="required" />
+            <p>Catalog Name:</p>
+            <input type="text" name="name"  required="required" />
+        	<p>Description:</p>
+        	<input type="text" name="description" required="required" />
+        	<p>Availability:</p>
+        	<input type="text" name="availability" required="required" />
+        	<p>Make:</p>
+        	<input type="text" name="makeNum"  required="required"/>
+        	<p>Model:</p>
+        	<input type="text" name="model"  required="required" />
+        	<button type="submit">Add</button>
+
+    	</form>
+    	<a href="Gui-Database.html"><button class="backBtn">Back</button></a>
+	</div>
+</body>
+</html>

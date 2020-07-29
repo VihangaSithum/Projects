@@ -1,0 +1,264 @@
+html, body {
+  background: #333;
+  height: 100%;
+  text-align: center;
+  overflow: hidden;
+  margin: 10%; 
+}
+
+.home {
+  height: 60px;
+  margin: 0 auto;
+  position: absolute;
+  top: 11%;
+  right: 600px;
+  transform: translateY(-50%);
+  width: 320px;
+}
+
+.store {
+  height: 60px;
+  margin: 0 auto;
+  position: absolute;
+  top: 34.5%;
+  right: 1200px;
+  transform: translateY(-50%);
+  width: 320px;
+}
+
+.gallery {
+  height: 60px;
+  margin: 0 auto;
+  position: absolute;
+  top: 34.5%;
+  right: 900px;
+  transform: translateY(-50%);
+  width: 320px;
+}
+
+.feedback {
+  height: 60px;
+  margin: 0 auto;
+  position: absolute;
+  top: 34.5%;
+  right: 600px;
+  transform: translateY(-50%);
+  width: 320px;
+}
+
+.quiz {
+  height: 60px;
+  margin: 0 auto;
+  position: absolute;
+  top: 34.5%;
+  right: 300px;
+  transform: translateY(-50%);
+  width: 320px;
+}
+
+.aboutUs {
+  height: 60px;
+  margin: 0 auto;
+  position: absolute;
+  top: 34.5%;
+  right: 0px;
+  transform: translateY(-50%);
+  width: 320px;
+}
+
+.site {
+  fill: transparent;
+  stroke-dasharray: 140 540;
+  stroke-dashoffset: -474;
+  stroke-width: 6px;
+  stroke: #DC143C;
+}
+
+/*inside store*/
+.heroPage1 {
+  height: 60px;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  right: 958px;
+  transform: translateY(-50%);
+  width: 320px;
+}
+.heroPage2 {
+  height: 60px;
+  margin: 0 auto;
+  position: absolute;
+  top: 60.5%;
+  right: 958px;
+  transform: translateY(-50%);
+  width: 320px;
+}
+
+.heroPage3 {
+  height: 60px;
+  margin: 0 auto;
+  position: absolute;
+  top: 71%;
+  right: 958px;
+  transform: translateY(-50%);
+  width: 320px;
+}
+
+.heroPage4 {
+  height: 60px;
+  margin: 0 auto;
+  position: absolute;
+  top: 81.5%;
+  right: 958px;
+  transform: translateY(-50%);
+  width: 320px;
+}
+
+/*Inside About Us*/
+
+.randika {
+  height: 60px;
+  margin: 0 auto;
+  position: absolute;
+  top: 49.5%;
+  right: 268px;
+  transform: translateY(-50%);
+  width: 320px;
+}
+.shehan {
+  height: 60px;
+  margin: 0 auto;
+  position: absolute;
+  top: 60%;
+  right: 268px;
+  transform: translateY(-50%);
+  width: 320px;
+}
+.pasindu {
+  height: 60px;
+  margin: 0 auto;
+  position: absolute;
+  top: 71%;
+  right: 268px;
+  transform: translateY(-50%);
+  width: 320px;
+}
+.vihanga {
+  height: 60px;
+  margin: 0 auto;
+  position: absolute;
+  top: 81.5%;
+  right: 268px;
+  transform: translateY(-50%);
+  width: 320px;
+}
+
+.names {
+  color: #fff;
+  font-family: 'Roboto-Black';
+  font-size: 22px;
+  letter-spacing: 8px;
+  line-height: 32px;
+  position: relative;
+  top: -48px;
+}
+@font-face{
+      font-family: Roboto-Black;
+      src:url("Roboto-Black.ttf");
+    }
+
+@keyframes draw {
+  0% {
+    stroke-dasharray: 140 540;
+    stroke-dashoffset: -474;
+    stroke-width: 8px;
+  }
+  100% {
+    stroke-dasharray: 760;
+    stroke-dashoffset: 0;
+    stroke-width: 4px;
+  }
+}
+
+.home:hover .site {
+  -webkit-animation: 0.5s draw linear forwards;
+  animation: 0.5s draw linear forwards;
+}
+.store:hover .site {
+  -webkit-animation: 0.5s draw linear forwards;
+  animation: 0.5s draw linear forwards;
+}
+.gallery:hover .site {
+  -webkit-animation: 0.5s draw linear forwards;
+  animation: 0.5s draw linear forwards;
+}
+.feedback:hover .site {
+  -webkit-animation: 0.5s draw linear forwards;
+  animation: 0.5s draw linear forwards;
+}
+.quiz:hover .site {
+  -webkit-animation: 0.5s draw linear forwards;
+  animation: 0.5s draw linear forwards;
+}
+.aboutUs:hover .site {
+  -webkit-animation: 0.5s draw linear forwards;
+  animation: 0.5s draw linear forwards;
+}
+/*Inside Store*/
+.heroPage1:hover .site {
+  -webkit-animation: 0.5s draw linear forwards;
+  animation: 0.5s draw linear forwards;
+}
+.heroPage2:hover .site {
+  -webkit-animation: 0.5s draw linear forwards;
+  animation: 0.5s draw linear forwards;
+}
+.heroPage3:hover .site {
+  -webkit-animation: 0.5s draw linear forwards;
+  animation: 0.5s draw linear forwards;
+}
+.heroPage4:hover .site {
+  -webkit-animation: 0.5s draw linear forwards;
+  animation: 0.5s draw linear forwards;
+}
+/*Inside About Us*/
+.randika:hover .site {
+  -webkit-animation: 0.5s draw linear forwards;
+  animation: 0.5s draw linear forwards;
+}
+.shehan:hover .site {
+  -webkit-animation: 0.5s draw linear forwards;
+  animation: 0.5s draw linear forwards;
+}
+.pasindu:hover .site {
+  -webkit-animation: 0.5s draw linear forwards;
+  animation: 0.5s draw linear forwards;
+}
+.vihanga:hover .site {
+  -webkit-animation: 0.5s draw linear forwards;
+  animation: 0.5s draw linear forwards;
+}
+/*Lines*/
+.downLine1{
+  position: absolute;
+  top: 38.4%;
+  right: 1250px;
+  stroke: #DC143C;
+  stroke-width:3px;
+}
+
+.downLine2{
+  position: absolute;
+  top: 38.4%;
+  right: 150px;
+  stroke: #DC143C;
+  stroke-width:3px;
+}
+.downMain{
+  position: absolute;
+  stroke: #DC143C;
+  top: 13.7%;
+  right: 170px;
+  stroke-width:3px;
+}
+

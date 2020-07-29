@@ -1,0 +1,419 @@
+
+<!DOCTYPE HTML>
+<html>
+   <head>
+      <title>MOVIES 4U</title>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <link rel="stylesheet" href="assets/css/main.css" />
+      <style>
+         .boxCard {
+         background-color: transparent;
+         width: 300px;
+         height: 400px;
+         border: 1px solid #f1f1f1;
+         perspective: 1000px; 
+         float: left;
+         margin: 15px;
+         overflow: hidden;
+         }
+         .boxCard-inner {
+         position: relative;
+         width: 100%;
+         height: 100%;
+         text-align: center;
+         transition: transform 0.8s;
+         transform-style: preserve-3d;
+         }
+         .boxCard:hover .boxCard-inner {
+         transform: rotateY(180deg);
+         }
+         .boxCard-front, .boxCard-back {
+         position: absolute;
+         width: 100%;
+         height: 100%;
+         backface-visibility: hidden;
+         }
+         .boxCard-front {
+         background-color: #bbb;
+         color: black;
+         }
+         .boxCard-back {
+         background-color:  #F0131E;
+         color: white;
+         transform: rotateY(180deg);
+         float: left;
+         } 
+         p{
+         padding: 15px;
+         }
+         .teamDetails{
+         margin-left: 6%;
+         height: 700px;
+         }
+         li a{
+         font-size: 22px;
+         padding: 15px;
+         margin-top: 25px;
+         }
+         .toTheStoreBtn{
+         margin-left: auto;
+         margin-right: auto;
+         margin-bottom: 45px;
+         padding: 12px;
+         border: 1px solid white;
+         border-radius: 50px;
+         text-decoration: none;
+         color: white;
+         font-size: 28px;
+         }
+         .toTheStoreBtn:hover{
+         background-color: #ED1D24;
+         border: 2px solid white;
+         } 
+         .cardBack{
+         color: white;
+         }
+      </style>
+   </head>
+   <body class="landing" id="font" >
+      <!-- Header -->
+      <header id="header" class="alt">
+         <ul id="navBar">
+            <img id="logo" src="images/LogoWhite.png" alt="logo of our page, a pic of iron man with a movie reel">
+            <li id = "navOp"><a href="MainPage.html">Home</a></li>
+            <li><a href="Feedback.html" id="navOpElement">Feedback</a></li>
+            <li><a href="Quiz.html">Challenges</a></li>
+            <li><a href="Site%20Map.html">Sitemap</a></li>
+            <li><a href="Quiz.html">Merchandise</a></li>
+            <li><a href="Gallery.html">Gallery</a></li>
+         </ul>
+      </header>
+      <!-- Banner -->
+      <section id="banner">
+         <h2>MARVEL</h2>
+         <p>Heroes are made by the path they choose, not the powers they are graced with.</p>
+         <a href="#three" class="mainBtn">Meet the Avengers</a>
+      </section>
+       <div class="fontSizeDiv">
+            <button type="button" onclick="myFunction1()">small</button>
+            <button type="button" onclick="myFunction2()">normal</button>
+            <button type="button" onclick="myFunction3()">large</button>
+            <button type="button" onclick="myFunction4()">x-large</button>
+            <button type="button" onclick="myFunction5()">xx-large</button>
+      </div>
+      <!-- First strip -->
+      <section  class="wrapper style1">
+         <div>
+            <div >
+               <header class="major">
+                  <h2 >STAN LEE</h2>
+                  <p >Meet the legend</p>
+               </header>
+            </div>
+            <div >
+               <p>Stan Lee, original name Stanley Martin Lieber, (born December 28, 1922, New York, New York, U.S.—died November 12, 2018, Los Angeles, California), American comic book writer best known for his work with Marvel Comics. Among the hundreds of characters and teams that he helped to create were the Fantastic Four, Spider-Man, the Avengers, and the X-Men.
+                  After graduating from high school at age 16, Lieber was hired as an editorial assistant for Timely Comics, and in 1942 he was promoted to editor. By that time he had begun writing comic-book scripts for Timely as Stan Lee, a pseudonym that eventually became his legal name. In the 1940s and ’50s—during which time the group, later named Atlas, struggled financially—Lee created several comic-book series, including The Witness, The Destroyer, Jack Frost, Whizzer, and Black Marvel.
+               </p>
+               <p  >In 1961 Lee and artist Jack Kirby created The Fantastic Four, about four astronauts who gain superpowers after a cosmic incident. The series made him and Atlas—now known as Marvel—major forces in the comics world. One year later Lee and artist Steve Ditko created Spider-Man. Lee, Kirby, and Ditko adopted a collaborative workflow that came to be known as “the Marvel method.” The technique gave artists significantly more input on story plotting, and it allowed Marvel to produce new content at a dizzying rate. The books joined a roster of increasingly successful series that also included The Incredible Hulk. Lee and Kirby added another winner to the group when they created The X-Men in 1963. A distinctive feature of Lee’s comic-book heroes is that they combine superhuman powers with human insecurities and emotions. Marvel continued to prosper, and in 1972 Lee became publisher and editorial director of the group</p>
+            </div>
+         </div>
+      </section>
+      <!-- Second strip -->
+      <section id="two" class="wrapper style2 special">
+         <div class="container">
+            <header class="major">
+               <h2 id="font" >Get the best Marvel merchandise from us</h2>
+               <p id="font" >Visit our online store</p>
+            </header>
+            <a href="#three" class="toTheStoreBtn">TO THE STORE !</a>
+         </div>
+      </section>
+      <!-- Third Strip (Hero cards) -->
+      <section id="three" class="wrapper style1">
+         <div class="container">
+            <header class="major special">
+               <h2 id="font" >Meet the earth's greatest heroes</h2>
+               <p id="font">The Avengers</p>
+            </header>
+            <div class="feature-grid">
+               <a href="HeroPages/ironman.html">
+                  <div class="charCard">
+                     <div class="img-hover-zoom">
+                        <img id="heroImage" src="images/ironman.jpg" height="240" width="200" alt="Hero card picture of iron man"> 
+                     </div>
+                     <div class="charDescription">
+                        <div class="charHero">
+                           IRON MAN
+                        </div>
+                        <br>
+                        <br>
+                        <div class="charName">
+                           TONY STARK
+                        </div>
+                     </div>
+                  </div>
+               </a>
+               <a href="HeroPages/captainAmerica.html">
+                  <div class="charCard">
+                     <div class="img-hover-zoom">
+                        <img id="heroImage" src="images/captainAmerica.jpg" height="240" width="200" alt="Hero card picture of captain america"> 
+                     </div>
+                     <div class="charDescription">
+                        <div class="charHero">CAPTAIN AMERICA</div>
+                        <br>
+                        <br>
+                        <div class="charName">STEVE ROGERS
+                        </div>
+                     </div>
+                  </div>
+               </a>
+               <a href="HeroPages/thor.html">
+                  <div class="charCard">
+                     <div class="img-hover-zoom">
+                        <img id="heroImage" src="images/thor.jpg" height="240" width="200" alt="Hero card picture of thor"> 
+                     </div>
+                     <div class="charDescription">
+                        <div class="charHero">
+                           THOR
+                        </div>
+                        <br>
+                        <br>
+                        <div class="charName">
+                        </div>
+                     </div>
+                  </div>
+               </a>
+               <div class="charCard">
+                  <div class="img-hover-zoom">
+                     <img id="heroImage" src="images/blackWidow.jpg" height="240" width="200" alt="Hero card picture of blackwidow"> 
+                  </div>
+                  <div class="charDescription">
+                     <div class="charHero">
+                        BLACK WIDOW
+                     </div>
+                     <br>
+                     <br>
+                     <div class="charName">
+                        NATASHA ROMANOFF
+                     </div>
+                  </div>
+               </div>
+               <div class="charCard">
+                  <div class="img-hover-zoom">
+                     <img id="heroImage" src="images/hulk.jpg" height="240" width="200" alt="Hero card picture of hulk"> 
+                  </div>
+                  <div class="charDescription">
+                     <div class="charHero">
+                        HULK
+                     </div>
+                     <br>
+                     <br>
+                     <div class="charName">
+                        BRUCE BANNER
+                     </div>
+                  </div>
+               </div>
+               <div class="charCard">
+                  <div class="img-hover-zoom">
+                     <img id="heroImage" src="images/hawkeye.jpg" height="240" width="200" alt="Hero card picture hawkeye"> 
+                  </div>
+                  <div class="charDescription">
+                     <div class="charHero">
+                        HAWKEYE
+                     </div>
+                     <br>
+                     <br>
+                     <div class="charName">
+                        CLINT BARTON
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- guardians of the galaxy -->
+      <section id="three" class="wrapper style1">
+         <div class="container">
+            <header class="major special">
+               <h2>Meet the guardians of the galaxy</h2>
+               <p>"We are groot" - Groot</p>
+            </header>
+            <div class="charCard">
+               <div class="img-hover-zoom">
+                  <img id="heroImage" src="images/gamora.jpg" height="240" width="200" alt="Hero card picture of gamora"> 
+               </div>
+               <div class="charDescription">
+                  <div class="charHero">
+                     GAMORA
+                  </div>
+                  <br>
+                  <br>
+                  <div class="charName">
+                  </div>
+               </div>
+            </div>
+            <div class="charCard">
+               <div class="img-hover-zoom">
+                  <img id="heroImage" src="images/starLord.jpg" height="240" width="200" alt="Hero card picture of star lord"> 
+               </div>
+               <div class="charDescription">
+                  <div class="charHero">
+                     STAR LORD
+                  </div>
+                  <br>
+                  <br>
+                  <div class="charName">
+                     PETER QUILL
+                  </div>
+               </div>
+            </div>
+            <div class="charCard">
+               <div class="img-hover-zoom">
+                  <img id="heroImage" src="images/valkirie.jpg" height="240" width="200" alt="Hero card picture of valkyrie"> 
+               </div>
+               <div class="charDescription">
+                  <div class="charHero">
+                     VALKYRIE
+                  </div>
+                  <br>
+                  <br>
+                  <div class="charName">
+                  </div>
+               </div>
+            </div>
+            <div class="charCard">
+               <div class="img-hover-zoom">
+                  <img id="heroImage" src="images/rocket.jpg" height="240" width="200" alt="Hero card picture of rocket"> 
+               </div>
+               <div class="charDescription">
+                  <div class="charHero">
+                     ROCKET
+                  </div>
+                  <br>
+                  <br>
+                  <div class="charName">
+                  </div>
+               </div>
+            </div>
+            <div class="charCard">
+               <div class="img-hover-zoom">
+                  <img id="heroImage" src="images/drax.jpg" height="240" width="200" alt="Hero card picture of drax"> 
+               </div>
+               <div class="charDescription">
+                  <div class="charHero">
+                     DRAX
+                  </div>
+                  <br>
+                  <br>
+                  <div class="charName">
+                  </div>
+               </div>
+            </div>
+            <div class="charCard">
+               <div class="img-hover-zoom">
+                  <img id="heroImage" src="images/groot.jpg" height="240" width="200" alt="Hero card picture of groot"> 
+               </div>
+               <div class="charDescription">
+                  <div class="charHero">
+                     GROOT
+                  </div>
+                  <br>
+                  <br>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="teamDetails">
+         <header class="major">
+            <h2>Meet the team</h2>
+            <p>Group 2</p>
+         </header>
+         <div class="boxCard">
+            <div class="boxCard-inner">
+               <div class="boxCard-front">
+                  <img src="images/randikaPic.jpg" alt="Randika (Designer)" style="width:300px;height:400px">
+               </div>
+               <div class="boxCard-back">
+                  <h2 class="cardBack" >Randika Weerasinghe</h2>
+                  <p align="left">IIT ID : 2018409</p>
+                  <p align="left">UOW ID : w1742112</p>
+                  <p align="left"> Student number : Student 2</p>
+                  <p align="left">Group number : Group 2</p>
+               </div>
+            </div>
+         </div>
+         <div class="boxCard">
+            <div class="boxCard-inner">
+               <div class="boxCard-front">
+                  <img src="images/pasinduPic.jfif" alt="Pasindu (Designer)" style="max-height: 100%;">
+               </div>
+               <div class="boxCard-back">
+                  <h2 class="cardBack">Pasindu Ekanayake</h2>
+                  <p align="left">IIT ID : 2018405</p>
+                  <p align="left">UOW ID : w1742110</p>
+                  <p align="left"> Student number : Student 3</p>
+                  <p align="left">Group number : Group 2</p>
+               </div>
+            </div>
+         </div>
+         <div class="boxCard">
+            <div class="boxCard-inner">
+               <div class="boxCard-front">
+                  <img src="CVPages/damith.jpg"  alt="Damith (Designer)" style="width:300px;height:400px;background-size:cover; ">
+               </div>
+               <div class="boxCard-back">
+                  <h2 class="cardBack" >Damith Shehan</h2>
+                  <p align="left">IIT ID : 2018377</p>
+                  <p align="left">UOW ID : w1742105</p>
+                  <p align="left"> Student number : Student 1</p>
+                  <p align="left">Group number : Group 2</p>
+               </div>
+            </div>
+         </div>
+         <div class="boxCard">
+            <div class="boxCard-inner">
+               <div class="boxCard-front">
+                  <img src="images/pass.png" alt="Vihanga (Designer)" style="width:300px;height:400px">
+               </div>
+               <div class="boxCard-back">
+                  <h2 class="cardBack">Vihanga Sithum</h2>
+                  <p align="left">IIT ID : 2018369</p>
+                  <p align="left">UOW ID : w1742102</p>
+                  <p align="left"> Student number : Student 4</p>
+                  <p align="left">Group number : Group 2</p>
+               </div>
+            </div>
+         </div>
+      </section>
+      <br><br><br><br><br><br><br><br><br><br><br><br>
+      <!-- Four -->
+      <section id="four" class="wrapper style3 special">
+         <div class="footer">
+            <div class="cvDetails">Meet the designer</div>
+            <a href="CVPages/RandikaCV.html" class="cvBtn">Randika</a>
+         </div>
+      </section>
+      <!-- Scripts -->
+           <script>
+    function myFunction1() {
+      document.getElementById("font").style.fontSize = "0.8em";
+    }
+    function myFunction2() {
+      document.getElementById("font").style.fontSize = "1.1em";
+    }
+    function myFunction3() {
+      document.getElementById("font").style.fontSize = "1.25em";
+    }
+    function myFunction4() {
+      document.getElementById("font").style.fontSize = "1.4em";
+    }
+    function myFunction5() {
+      document.getElementById("font").style.fontSize = "1.9em";
+    }
+    </script>
+   </body>
+</html>
+
+		
+

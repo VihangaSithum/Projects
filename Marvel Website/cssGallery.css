@@ -1,0 +1,224 @@
+		body {
+			background-size: 1600px 900px;
+			background-image: url("62508.jpg");
+
+			}
+		
+		h3 {
+			font-family:roboto;
+			font-size:20px;
+			text-align: center;
+			background: linear-gradient(to right,#FF0022,#FFE642,#FF0022,#FF0022);
+			-webkit-background-clip:text;
+			color: transparent;
+			letter-spacing: 5px;
+
+		}
+
+		@font-face{
+			font-family: roboto;
+			src:url("Roboto-Black.ttf");
+		}
+
+
+		.modalImg{
+  			display: none; 
+  			position: fixed; 
+  			z-index: 1; 
+  			padding-top: 100px; 
+  			left: 0;
+  			top: 0;
+  			width: 100%; 
+  			height: 100%; 
+  			overflow: auto; 
+  			background-color: rgb(0,0,0); 
+  			background-color: rgba(0,0,0,0.7); 
+		}
+		.modal01 {
+ 			margin: auto;
+  			display: block;
+  			width: 30%;
+  			max-width: 700px;
+  		}
+
+		.modal01{
+			-webkit-animation-name: zoom;
+			-webkit-animation-duration:0.7s;
+			animation-name: zoom;
+			animation-duration: 0.7s;
+		}
+
+    	@-webkit-keyframes zoom {
+  		from {-webkit-transform:scale(0)} 
+  		to {-webkit-transform:scale(1)}
+		}
+
+		.modal01 {
+ 			margin: auto;
+  			display: block;
+  			width: 30%;
+  			max-width: 700px;
+  		}
+
+		.exit{
+			position: absolute;
+			top: 15px;
+			right: 35px;
+			color: white;
+			font-size: 50px;
+			transition: 1s;
+		}
+
+		.exit:hover,
+		.exit:focus {
+			color: red;
+			cursor: pointer;
+		}
+
+		.container1 {
+			display:inline-block;
+			padding: 0px;
+			transition: transform .2s;
+			width: 200px;
+			height: 200px;
+			margin: 45px ;
+			border-image: 1px;
+		}
+
+		.container1:hover {
+			-ms-transform: scale(1);
+			transform: scale(1.1);
+		}
+
+		.nameTag{
+			position: absolute;
+			top: -10px;
+			left: -9.4%;
+			height: 650px;
+			width: 1652px;
+			background: -webkit-linear-gradient(rgba(0,0,0,0.8)0%,rgba(0,0,0,0)100%);
+			z-index: -1;
+
+		}
+		#caption{
+
+  			margin: auto;
+  			display: block;
+  			width: 80%;
+ 			height: 20px;
+  			max-width: 700px;
+  			text-align: center;
+  			color: #ccc;
+  			padding: 30px 0;
+  			height: 150px;
+
+		}
+
+		#caption {  
+  			-webkit-animation-name: zoom;
+  			-webkit-animation-duration: 0.6s;
+  			animation-name: zoom;
+  			animation-duration: 0.6s;
+		}
+
+		.heading{
+			background: linear-gradient(to right,#FF0022,#FFE642,#FFE642,#FF0022);
+		}
+
+		h4{
+			position: relative;
+			text-align: center;
+			font-family: roboto;
+			letter-spacing: 3px;
+			font-size: 15px;
+		}
+
+		.selections{
+			position: relative;
+			top: 66%;
+			right: 0%;
+			height: 280px;
+			width: 1500px;
+			background: -webkit-linear-gradient(rgba(0,0,0,0.0)0%,rgba(0,0,0,1)100%);
+			
+			
+		}
+		.drpDown1{
+			position: relative;
+			padding: 10px;
+			border: none;
+			left: 45%;
+			cursor: pointer;
+			background-image: url("Spiderqq.jpg");
+			background-size: 130px 60px;
+			color: white;
+			font-family: roboto;
+			font-size: 18px;
+			text-align: center;
+			letter-spacing: 3px;
+		}
+		.opt{
+			background-color: #4b0016 ;
+		}
+		.selectBox2{
+			position: relative;
+			top: 5%;
+		}
+		#sC{
+			height: 25px;
+			position: relative;
+			text-align: center;
+			padding-top: 10px;
+			font-size: 18px; 
+
+		}
+        .imageDiv{
+        	margin-top: 10px;
+          	position: relative;
+        }
+        .selectDiv{
+            bottom: 850px;  
+        }
+        .topnav {
+  			overflow: hidden;
+            top:80px;
+  			background-color: white;
+            padding-top: 0px;
+    		height: 90px;
+    		border-bottom: 4px solid white;
+            font-family: sans-serif;
+           }
+
+		.topnav a {
+  			float: right;
+  			color: black;
+  			text-align: center;
+   			padding-top: 20px;
+			padding: 15px;
+  			text-decoration: none;
+  			font-size: 20px;
+    		border-right: 2px solid black;
+    		margin-top: 10px;
+
+		}
+        header{
+            margin: 0px;
+        }
+
+		.topnav a:hover {
+    		font-weight: 500;
+  			color: red;
+		}
+        #logo{
+            height: 90px;
+            width:90px;
+            float: left;
+            padding: 5px;
+        }
+        strong{
+            color: red;
+        }
+
+        #iron{
+          	font-family: roboto;
+        }

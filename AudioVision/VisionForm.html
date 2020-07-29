@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Vision Form</title>
+	<link rel="stylesheet" type="text/css" href="visionFormCss.css">
+</head>
+</head>
+<body>
+	<div class="form1">
+		<h1>Vision Form</h1>
+    	<form method="post" action="visionTableDBconnection.php">
+    		<p>Catalog Id:</p>
+    		<input type="text" name="catalogId"  required="required" />
+            <p>Catalog Name:</p>
+            <input type="text" name="name"  required="required" />
+    		<p>Lens Thinnes:</p>
+    		<input type="text" name="thinnes"  required="required" />
+        	<p>Lens Description:</p>
+        	<input type="text" name="description" required="required" />
+        	<p>Lens Availability:</p>
+        	<input type="text" name="availability" required="required" />
+        	<p>Vision Type:</p>
+        	<input type="text" name="visionType"  required="required" />
+        	<p>Lens Tint:</p>
+        	<input type="text" name="tint"  required="required" />
+        	<p>Frame Brand:</p>
+        	<input type="text" name="brand"  required="required" />
+        	<p>Frame Model:</p>
+        	<input type="text" name="frModel"  required="required" />
+        	<button type="submit" value="submit">Add</button>
+
+    	</form>
+    	<a href="Gui-Database.html"><button class="backBtn">Back</button></a>
+	</div>
+</body>
+</html>

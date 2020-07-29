@@ -1,0 +1,309 @@
+<html>
+   <head>
+      <title>Generic - Spatial by TEMPLATED</title>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <link rel="stylesheet" href="assets/css/main.css" />
+      <style>
+         input[type=text], [type=tel], [type=number], [type=password], select, textarea {
+         width: 95%;
+         padding: 12px;
+         border: 1px solid #ccc;
+         border-radius: 4px;
+         resize: vertical;
+         border-radius: 10px;
+         opacity: .7;
+         }
+         input[type=submit] {
+         background-color: #249147;
+         margin-top: 10px;
+         padding: 12px 20px;
+         border: 1px solid black;
+         border-radius: 10px;
+         cursor: pointer;
+         float: right;
+         color:white;
+         }
+         input[type=submit]:hover {
+         background-color: red;
+         }
+         label, legend {
+         padding: 12px 12px 12px 0;
+         display: inline-block;
+         }
+         .container {
+         display:block;
+         overflow:hidden;
+         width:1024px;
+         margin:auto;
+         margin-top: 0;
+         padding-top:0;
+         padding-bottom:20px;
+         }
+         .fielset-bg {
+         margin-top: 20px;
+         border-radius: 20px;
+         border: 1px solid black;
+         padding: 20px;
+         background-color: ghostwhite;
+         background-image: url('CSS/gfx/lines.svg');
+         }
+         fieldset{
+         background-color: ghostwhite;
+         opacity: .7;
+         border-radius: 10px;
+         margin-right: 38px;
+         border: 1px solid #ccc;
+         }
+         .col-20 {
+         float: left;
+         width: 20%;
+         }
+         .col-80 {
+         float: left;
+         width: 80%;
+         margin-top: 6px;
+         }
+         .row {
+         margin-top: 10px;
+         }
+         /* Clear floats after the columns */
+         .row:after {
+         content: "";
+         display: table;
+         clear: both;
+         }
+         #contact{
+         float: right;
+         margin-right: 100px;
+         margin-top: -100px;
+         }
+         p span {
+         display: block;
+         }
+         #logo{
+         height: 120px;
+         width:140px;
+         float: left;
+         padding: 10px;
+         }
+         .topnav {
+         overflow: hidden;
+         background-color: transparent;
+         padding-top: 0px;
+         height: 120px;
+         border-bottom: 2px solid red;
+         }
+         .topnav a {
+         float: right;
+         color: black;
+         text-align: center;
+         padding: 25px;
+         text-decoration: none;
+         font-size: 20px;
+         border-right: 2px solid black;
+         margin-top: 10px;
+         }
+         .topnav a:hover {
+         font-weight: 500;
+         color: red;
+         }
+         .logo{
+         height: 180px;
+         width:180px;
+         float: left;
+         }
+         strong{
+         color: red;
+         }
+      </style>
+      <script>
+         function validateForm() {
+           var nameFilled = false;
+           if (document.forms["feedbackForm"]["name"].value == "") {
+             alert("Name must be filled out");
+             return nameFilled;
+             }else{
+                 nameFilled = true;
+                 
+             }
+             if (document.forms["feedbackForm"]["email"].value == "") {
+             alert("email must be filled out");
+             return false;
+             }
+             var radios = document.getElementsByName("visualDes");
+             var i = 0;
+             var formValid = false;
+             var rating;
+             while (!formValid && i < radios.length) {
+                 if (radios[i].checked) 
+                     formValid = true;
+                     rating = radios[i].value;
+         
+                 i++;        
+             }
+             if(formValid == true && nameFilled == true){
+                 alert("Dear "+document.forms["feedbackForm"]["name"].value+" thank you very much for your feedback. You rated our site as "+rating+
+                       ". Your comment was \""+ document.getElementById("comments").value+"\"");
+             }
+             if (!formValid) alert("Please select your rating level ");
+                 return formValid;
+             
+         
+             
+         }
+      </script>
+   </head>
+   <body id="font">
+      <!-- Header -->
+      <div class="topnav">
+         <img id = "logo" src="images/logoFinal.png">
+         <a  href="MainPage.html">Home</a>
+         <a href="Feedback.html"><strong>Feedback</strong></a>
+         <a href="Quiz.html">Challenges</a>
+         <a href="Site%20Map.html">Sitemap</a>
+         <a href="Site%20Map.html">Merchandise</a>
+         <a href="Gallery.html">Gallery</a>
+      </div>
+      <div class="fontSizeDiv">
+            <button type="button" onclick="myFunction1()">small</button>
+            <button type="button" onclick="myFunction2()">normal</button>
+            <button type="button" onclick="myFunction3()">large</button>
+            <button type="button" onclick="myFunction4()">x-large</button>
+            <button type="button" onclick="myFunction5()">xx-large</button>
+      </div>
+      <section id="four" class="wrapper style3 special">
+         <div class="container">
+            <header class="major">
+               <h2>We would like your feedback to improve our website</h2>
+               <p>We would like to improve our site for you</p>
+            </header>
+         </div>
+      </section>
+      <!-- Main -->
+      <section id="main" class="wrapper">
+         <div class="container">
+            <form name="feedbackForm"  onsubmit="return validateForm()" >
+               <div class="fielset-bg">
+                  <!-- -------------  Customer details group ------------- -->
+                  <h3> Customer details</h3>
+                  <div class="row">
+                     <div class="col-20">
+                        <h4>Name *</h4>
+                     </div>
+                     <div class="col-80">
+                        <input type="text" id="name" name="name" placeholder="" >
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="col-20">
+                        <h4>Email*</h4>
+                     </div>
+                     <div class="col-80">
+                        <input type="text" id="email" name="email" placeholder=""  >
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="col-20">
+                        <h4>Phone </h4>
+                     </div>
+                     <div class="col-80">
+                        <input type="tel" inputmode="numeric" id="tel" name="tel" 
+                           placeholder=""  >
+                     </div>
+                  </div>
+               </div>
+               <div class="fielset-bg">
+                  <h3>Feedback on our site</h3>
+                  <div class="row">
+                     <div class="col-20">
+                        <h4>Rating(Overall)*</h4>
+                     </div>
+                     <fieldset for="visualDes">
+                        <div class="col-20">
+                           <input type="radio" name="visualDes" id="visualDes" value="amazing" >
+                           <label for="visualDes">amazing</label> 
+                        </div>
+                        <div class="col-20">
+                           <input type="radio" name="visualDes" id="VisualDes" value="good">
+                           <label for="visualDes">good</label>
+                        </div>
+                        <div class="col-20">
+                           <input type="radio" name="visualDes" id="visualDes" value="average">
+                           <label for="visualDes">average</label>
+                        </div>
+                        <div class="col-20">
+                           <input type="radio" name="visualDes" id="visualDes" value="poor">
+                           <label for="visualDes">poor</label>
+                        </div>
+                     </fieldset>
+                  </div>
+                  <!-- ------------- content---------------- -->
+                  <div class="row">
+                     <div class="col-20">
+                        <h4>content</h4>
+                     </div>
+                     <fieldset for="content">
+                        <div class="col-20">
+                           <input type="radio" name="content" id="content" value="amazing" >
+                           <label for="content">amazing</label> <!-- Explicit labelling outside the control in order to seperate the label from the control -->
+                        </div>
+                        <div class="col-20">
+                           <input type="radio" name="content" id="content" value="good">
+                           <label for="content">good</label>
+                        </div>
+                        <div class="col-20">
+                           <input type="radio" name="content" id="content" value="average">
+                           <label for="content">average</label>
+                        </div>
+                        <div class="col-20">
+                           <input type="radio" name="content" id="content" value="poor">
+                           <label for="content">poor</label>
+                        </div>
+                     </fieldset>
+                  </div>
+                  <!-- ------------- comments  ---------------- -->
+                  <div class="row">
+                     <div class="col-20">
+                        <h4>Comments</h4>
+                     </div>
+                     <div class="col-80">
+                        <textarea name="comments" id="comments"  >
+                        </textarea>
+                     </div>
+                  </div>
+               </div>
+               <div class="row">
+                  <input type="submit" name="submit" value="Submit">
+               </div>
+            </form>
+         </div>
+      </section>
+      <section id="four" class="wrapper style3 special">
+         <div class="footer">
+            <div class="cvDetails">Get to know about our designers</div>
+            <a href="CVPages/RandikaCV.html" class="cvBtn">Randika</a>
+            <a href="CVPages/pasinduCV.html" class="cvBtn">Pasindu</a>
+            <a href="CVPages/DamithCV.html" class="cvBtn">Shehan</a>
+            <a href="CVPages/vihanga.jpg" class="cvBtn">Vihanga</a>
+         </div>
+      </section>
+               <script>
+    function myFunction1() {
+      document.getElementById("font").style.fontSize = "0.8em";
+    }
+    function myFunction2() {
+      document.getElementById("font").style.fontSize = "1.1em";
+    }
+    function myFunction3() {
+      document.getElementById("font").style.fontSize = "1.25em";
+    }
+    function myFunction4() {
+      document.getElementById("font").style.fontSize = "1.4em";
+    }
+    function myFunction5() {
+      document.getElementById("font").style.fontSize = "1.9em";
+    }
+    </script>
+   </body>
+</html>

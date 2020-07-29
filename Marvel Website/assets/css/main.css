@@ -1,0 +1,364 @@
+html, body{
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: baseline;
+}
+/* navigation bar*/
+#navBar {
+list-style-type: none;
+margin: 0;
+padding: 10px;
+overflow: hidden;
+background-color: transparent;
+position: absolute;
+width: 100%;
+}
+#navOp{
+float: right;
+}
+li a {
+float: right;
+display: block;
+color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+li a:hover:not(.active) {
+background-color: #111;
+opacity: 0.85;
+}
+/* main button*/
+.mainBtn{
+margin-left: auto;
+margin-right: auto;
+padding: 20px;
+border: 1px solid white;
+border-radius: 50px;
+text-decoration: none;
+color: white;
+font-size: 20px;
+}
+.mainBtn:hover{
+background-color: #ED1D24;
+border: 2px solid white;
+}
+/* cv button */
+.cvBtn{
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 45px;
+padding: 10px;
+border: 1px solid white;
+border-radius: 50px;
+text-decoration: none;
+color: white;
+font-size: 20px;
+}
+.cvBtn:hover{
+background-color: #ED1D24;
+border: 2px solid white;
+}
+.cvDetails{
+font-size: 30px;
+padding: 20px;
+color: white;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+display: block;
+}
+body {
+line-height: 1;
+}
+ol, ul {
+list-style: none;
+}
+blockquote, q {
+quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+content: '';
+content: none;
+}
+table {
+border-collapse: collapse;
+border-spacing: 0;
+}
+body {
+-webkit-text-size-adjust: none;
+}
+/* Box Model */
+*, *:before, *:after {
+box-sizing: border-box;
+}
+/* Containers */
+.container{
+width: 90%;
+margin-left: auto;
+margin-right: auto;
+}
+/* hero cards */
+.charCard{
+width: 200px;
+height:360px;
+overflow: hidden;
+float: left;
+padding:0px;
+margin: 12px;
+}
+#heroImage{
+padding: 0px;
+border: 0px;
+}
+.charDescription{
+background-color: #151515;
+height: 120px;
+width:200px;
+border-top: 5px solid red;
+position: absolute;
+padding: 0px;
+}
+.charHero{
+float:left;
+padding-left:15px;
+padding-top: 15px;
+color:white;
+font-family:Trebuchet MS;
+font-size: 16px;
+letter-spacing: 1px;
+overflow: hidden;
+}
+.charName{
+float:left;
+padding: 3px;
+color: grey;
+font-family: Trebuchet MS;
+font-size: 12px;
+padding-left: 15px;
+overflow: hidden;
+}
+.img-hover-zoom {
+height: 240px; 
+overflow: hidden; 
+}
+/*  Transition property for smooth transformation of images */
+.img-hover-zoom img {
+transition: transform .6s ease;
+}
+/* transforming the image when container gets hovered */
+.img-hover-zoom:hover img {
+transform: scale(1.2);
+}
+/* Basic */
+@-ms-viewport {
+width: device-width;
+}
+body {
+background: #fff;
+}
+body.landing {
+padding-top: 0 ;
+}
+body, input, select, textarea {
+font-family: "Raleway", Arial, Helvetica, sans-serif;
+font-size: 13pt;
+font-weight: 400;
+line-height: 2em;
+}
+#logo{
+height: 190px;
+width: 190px;
+float: left;
+}
+.topnav {
+overflow: hidden;
+background-color: transparent;
+padding-top: 0px;
+height: 120px;
+border-bottom: 2px solid red;
+}
+.topnav a {
+float: right;
+color: black;
+text-align: center;
+padding: 25px;
+text-decoration: none;
+font-size: 20px;
+border-right: 2px solid black;
+margin-top: 10px;
+}
+.topnav a:hover {
+font-weight: 500;
+color: red;
+}
+#logo{
+height: 120px;
+width:140px;
+float: left;
+padding: 10px;
+}
+strong{
+color: red;
+}
+strong, b {
+color: #484848;
+font-weight: 700;
+}
+em, i {
+font-style: italic;
+}
+p {
+margin: 0 0 2em 0;
+}
+h1, h2, h3, h4, h5, h6 {
+color: #484848;
+font-weight: 700;
+line-height: 1em;
+margin: 0 0 1em 0;
+text-transform: uppercase;
+}
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+color: inherit;
+text-decoration: none;
+}
+h2 {
+font-size: 1.75em;
+line-height: 1.5em;
+}
+h3 {
+font-size: 1.35em;
+line-height: 1.5em;
+}
+h4 {
+font-size: 1.1em;
+line-height: 1.5em;
+}
+h5 {
+font-size: 0.9em;
+line-height: 1.5em;
+}
+h6 {
+font-size: 0.7em;
+line-height: 1.5em;
+}
+.align-left {
+text-align: left;
+}
+.align-center {
+text-align: center;
+}
+.align-right {
+text-align: right;
+}
+/* Section/Article */
+section.special, article.special {
+text-align: center;
+}
+header p {
+color: #aaa;
+position: relative;
+margin: 0 0 1.5em 0;
+text-transform: uppercase;
+}
+header h2 + p {
+font-size: 1.25em;
+margin-top: -1em;
+line-height: 1.5em;
+}
+header h3 + p {
+font-size: 1.1em;
+margin-top: -0.8em;
+line-height: 1.5em;
+}
+header h4 + p,
+header h5 + p,
+header h6 + p {
+font-size: 0.9em;
+margin-top: -0.6em;
+line-height: 1.5em;
+}
+header.major {
+margin: 0 0 6em 0;
+}
+header.major h2 {
+font-size: 3em;
+}
+header.major h2, header.major h3, header.major h4, header.major h5, header.major h6 {
+display: inline-block;
+margin: 0 0 0.8em;
+}
+header.major p {
+font-size: 1.7em;
+margin-bottom: 0;
+}
+/* Wrapper */
+.wrapper {
+padding: 4em 0 4em 0;
+margin-left: auto;
+padding-left: 10px;
+}
+.wrapper.style2 {
+background-color: black;
+}
+.wrapper.style3 {
+background-attachment: fixed;
+background-image: url("images/overlay.png"), url("../../images/marvel.jpg");
+background-position: center center;
+background-size: cover;
+}
+.wrapper.style3 header.major {
+margin-bottom: 3em;
+}
+.wrapper.style3 header.major h2 {
+color: #ffffff;
+}
+@media screen and (max-width: 1280px) {
+.wrapper.style3 header.major {
+margin-bottom: 2em;
+}
+}
+#banner {
+padding: 16em 0 13em 0;
+background-attachment: fixed;
+background-image: url("images/overlay.png"), url("../../images/marvel.jpg");
+background-position: center top;
+background-size: cover;
+line-height: 1.75;
+text-align: center;
+height: 640px;
+}
+#banner h2 {
+color: #ffffff;
+display: inline-block;
+font-size: 3.5em;
+line-height: 1.35;
+margin-bottom: 0.5em;
+}
+#banner p {
+color: #aaa;
+font-size: 1.5em;
+margin-bottom: 1.75em;
+text-transform: uppercase;
+}
+#main {
+padding-top: 4em;
+}
+.fontSizeDiv{
+background-color: transparent;
+left: 78%;
+top: 85%;
+border: 2px solid red;
+width: 306px;
+position: fixed;
+border-radius: 50px;
+}
+.fontSizeDiv button{
+padding: 5px;
+float: right;
+margin: 4px;
+background-color: white+;
+border-radius: 50px;
+}
